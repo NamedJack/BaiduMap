@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ultrapower.baidumap.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/net_choose_head"
+        android:scaleType="fitXY"
+        android:src="@drawable/net_choose_head"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_below="@id/net_choose_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refreshType="water_drop">
+
+        <ExpandableListView
+            android:id="@+id/expanded_menu"
+            android:divider="@color/gray"
+            android:childDivider="@color/seaGreen"
+            android:dividerHeight="3dp"
+            android:listSelector="@color/listSelector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ExpandableListView>
+    </com.baoyz.widget.PullRefreshLayout>
+</RelativeLayout>
