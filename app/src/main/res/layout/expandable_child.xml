@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/seaGreen"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/icon_total_number"
+        android:textSize="20sp"
+        android:text="7"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/design_shape_point"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:gravity="center"
+        android:layout_toRightOf="@id/icon_total_number"
+        android:id="@+id/icon_group_number"
+        android:textSize="20sp"
+        android:text="网格 CD - 0001"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>
